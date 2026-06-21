@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitation de Souhail & Wissal</title>
+    <link rel="icon" type="image/png" href="/image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-serif {
+        font-family: "Cormorant Garamond", serif;
+      }
+    </style>
+  </head>
+  <body class="overflow-hidden bg-[#f5f0e6] font-['Cormorant_Garamond',serif] text-[#2d2a27]">
+    <main
+      id="invitation"
+      class="relative h-[100svh] w-screen overflow-hidden bg-[#f5f0e6] [&.has-started_.tap-layer]:pointer-events-none [&.has-started_.tap-layer]:opacity-0 [&.is-hero-ready_.hero-copy]:opacity-100 [&.is-intro-done_.intro-video]:pointer-events-none [&.is-intro-done_.intro-video]:opacity-0"
+    >
+      <section class="relative h-[100svh] w-full overflow-hidden bg-[#fff8f3]">
+        <article class="invite-content absolute inset-0 z-0 overflow-hidden scroll-smooth bg-[#f5f0e6] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <section class="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-7 py-20 text-center lg:px-16">
+            <video id="hero-background-video" class="absolute inset-0 h-full w-full object-cover" muted loop playsinline preload="auto">
+              <source src="./MPEG-4%20movie.mp4" type="video/mp4" />
+            </video>
+            <video id="intro-video" class="intro-video absolute inset-0 z-20 h-full w-full object-cover transition-opacity duration-1000 ease-out" muted playsinline preload="auto" poster="./intro-poster.jpg">
+              <source src="./Heritage%20Theme%20Intro%20Video.mp4" type="video/mp4" />
+            </video>
+            <button id="start-invitation" class="tap-layer absolute inset-0 z-30 cursor-pointer bg-transparent transition-opacity duration-500" type="button" aria-label="Lancer l'animation d'ouverture"></button>
+            <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,247,242,0.18)_0%,rgba(255,247,242,0.02)_45%,rgba(255,247,242,0.32)_100%)]"></div>
+
+            <div class="hero-copy relative z-10 mt-16 w-full text-[#4f5548] opacity-0 transition-opacity duration-1000 ease-out lg:mt-24">
+              <p data-i18n="hero.kicker" class="mb-4 text-[0.68rem] uppercase tracking-[0.55em] text-[#8f8078] lg:text-xs lg:tracking-[0.65em]">Nous nous marions</p>
+              <h1 class="font-['Great_Vibes',cursive] text-[4rem] leading-[0.9] tracking-[-0.06em] text-[#3d5136] drop-shadow-sm sm:text-[4.6rem] lg:text-[6rem]">
+                Souhail & Wissal
+              </h1>
+              <div class="mx-auto my-7 flex max-w-[220px] items-center justify-center gap-4 text-[#d28b50] lg:my-9 lg:max-w-[340px] lg:gap-7">
+                <span class="h-px flex-1 bg-[#dfc3a7]"></span>
+                <span class="text-xl lg:text-3xl">♡</span>
+                <span class="h-px flex-1 bg-[#dfc3a7]"></span>
+              </div>
+              <p data-i18n="hero.date" class="text-sm uppercase tracking-[0.38em] text-[#c8834c] lg:text-base lg:tracking-[0.45em]">22 novembre 2026</p>
+              <button data-scroll-to="rsvp" class="mt-40 rounded-full bg-white/55 px-8 py-3 text-[0.68rem] uppercase tracking-[0.42em] text-[#8e756a] shadow-[0_10px_40px_rgba(139,99,88,0.12)] backdrop-blur-sm transition hover:bg-white/75 lg:mt-20 lg:px-10 lg:py-4 lg:text-xs">
+                <span data-i18n="hero.cta">Confirmer votre presence</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="bg-[#f5f0e6] px-8 py-20 text-center lg:min-h-screen lg:px-20 lg:py-14">
+            <p data-i18n="story.kicker" class="font-['Great_Vibes',cursive] text-2xl text-[#d38d58] lg:hidden">Notre Parcours</p>
+            <p data-i18n="story.kicker" class="hidden font-['Great_Vibes',cursive] text-2xl text-[#d38d58] lg:block">Notre Parcours</p>
+            <h2 data-i18n="story.title" class="mt-5 font-['Great_Vibes',cursive] text-[3.25rem] leading-none text-[#385032] lg:mt-8 lg:text-[4rem]">Notre Histoire d'Amour</h2>
+            <div class="mx-auto my-8 flex max-w-[230px] items-center justify-center gap-5 text-[#d28b50] lg:my-12 lg:max-w-[320px] lg:gap-7">
+              <span class="h-px flex-1 bg-[#e7c9ac]"></span>
+              <span class="text-2xl lg:text-4xl">♡</span>
+              <span class="h-px flex-1 bg-[#e7c9ac]"></span>
+            </div>
+
+            <div class="relative mt-12 space-y-16 text-left lg:hidden">
+              <div class="absolute bottom-8 left-[10px] top-3 w-px bg-[#edd8c3]"></div>
+
+              <div class="relative pl-12">
+                <span class="absolute left-0 top-2 h-5 w-5 rounded-full border-[5px] border-[#f5f0e6] bg-[#d28b50]"></span>
+                <p class="font-['Great_Vibes',cursive] text-3xl text-[#d28b50]">2025</p>
+                <h3 data-i18n="story.metTitle" class="mt-4 font-['Great_Vibes',cursive] text-[2.15rem] leading-none text-[#2d2a27]">Notre Rencontre</h3>
+                <p data-i18n="story.metText" class="mt-6 font-serif italic text-lg leading-8 text-[#746b64]">
+                  Nos chemins se sont croises de la plus belle des facons. Ce qui a commence par une rencontre inattendue est devenu le debut de notre magnifique aventure ensemble.
+                </p>
+              </div>
+
+              <div class="relative pl-12">
+                <span class="absolute left-0 top-2 h-5 w-5 rounded-full border-[5px] border-[#f5f0e6] bg-[#d28b50]"></span>
+                <p class="font-['Great_Vibes',cursive] text-3xl text-[#d28b50]">2026</p>
+                <h3 data-i18n="story.adventureTitle" class="mt-4 font-['Great_Vibes',cursive] text-[2.15rem] leading-none text-[#2d2a27]">Notre Premiere Aventure</h3>
+                <p data-i18n="story.adventureText" class="mt-6 font-serif italic text-lg leading-8 text-[#746b64]">
+                   Nous savions que c'etait pour toujours. Construire notre vie ensemble, soutenir nos reves et grandir chaque jour un peu plus forts.
+                </p>
+              </div>
+
+              
+            </div>
+
+            <div class="relative mx-auto mt-20 hidden max-w-[900px] pb-16 lg:block">
+              <div class="absolute bottom-0 left-1/2 top-0 w-px -translate-x-1/2 bg-[#ead6c2]"></div>
+              <div class="space-y-24">
+                <div class="grid grid-cols-[1fr_4.5rem_1fr] items-start gap-x-8">
+                  <article class="pr-8 text-right">
+                    <p class="font-['Great_Vibes',cursive] text-3xl text-[#d28b50]">2025</p>
+                    <h3 data-i18n="story.metTitle" class="mt-4 font-['Great_Vibes',cursive] text-3xl leading-none text-[#2d2a27]">Notre Rencontre</h3>
+                    <p data-i18n="story.metText" class="ml-auto mt-6 max-w-[440px] font-serif text-xl italic leading-[1.7] text-[#716962]">
+                      Nos chemins se sont croises de la plus belle des facons. Ce qui a commence par une rencontre inattendue est devenu le debut de notre magnifique aventure ensemble.
+                    </p>
+                  </article>
+                  <div class="relative flex justify-center pt-5"><span class="h-6 w-6 rounded-full bg-[#d28b50]"></span></div>
+                  <div></div>
+                </div>
+
+                <div class="grid grid-cols-[1fr_4.5rem_1fr] items-start gap-x-8">
+                  <div></div>
+                  <div class="relative flex justify-center pt-5"><span class="h-6 w-6 rounded-full bg-[#d28b50]"></span></div>
+                  <article class="pl-8 text-left">
+                    <p class="font-['Great_Vibes',cursive] text-3xl text-[#d28b50]">2026</p>
+                    <h3 data-i18n="story.adventureTitle" class="mt-4 font-['Great_Vibes',cursive] text-3xl leading-none text-[#2d2a27]">Notre Premiere Aventure</h3>
+                    <p data-i18n="story.adventureText" class="mt-6 max-w-[420px] font-serif text-xl italic leading-[1.7] text-[#716962]">
+                       Nous savions que c'etait pour toujours. Construire notre vie ensemble, soutenir nos reves et grandir chaque jour un peu plus forts.
+                    </p>
+                  </article>
+                </div>
+
+                <div class="grid grid-cols-[1fr_4.5rem_1fr] items-start gap-x-8">
+              
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="bg-[#fff8f3] px-8 py-20 lg:bg-[#34492b] lg:px-20 lg:py-32">
+            <img src="./birds.png" alt="" class="mx-auto mb-10 w-72 opacity-90 lg:hidden" />
+            <div class="text-center">
+              <h2 data-i18n="program.title" class="font-['Great_Vibes',cursive] text-[4rem] leading-none text-[#5e5754] lg:text-[4rem] lg:text-[#e8c49f]">Programme du Jour</h2>
+              <p data-i18n="program.subtitle" class="mt-4 text-lg tracking-wide text-[#b5aaa5] lg:text-lg lg:text-[#d7dcd0]">Ce que nous avons prepare pour vous</p>
+            </div>
+
+            <div class="mt-14 space-y-8 lg:hidden">
+              <div class="grid grid-cols-[2.8rem_4.5rem_1fr] items-start gap-4">
+                <div class="grid h-10 w-10 place-items-center rounded-full bg-white text-xl text-[#d88950] shadow-sm">♙</div>
+                <time class="rounded-md bg-[#ef6677] px-2 py-1 text-center text-xs font-semibold text-white">8:00 PM</time>
+                <div><h3 data-i18n="program.arrival" class="font-serif text-xl text-[#746a65]">Arrivee des invites</h3><p data-i18n="program.arrivalText" class="mt-1 text-[#b6aaa5]">Accueil et reception</p></div>
+              </div>
+              <div class="grid grid-cols-[2.8rem_4.5rem_1fr] items-start gap-4">
+                <div class="grid h-10 w-10 place-items-center rounded-full bg-white text-xl text-[#d88950] shadow-sm">♡</div>
+                <time class="rounded-md bg-[#ef6677] px-2 py-1 text-center text-xs font-semibold text-white">9:00 PM</time>
+                <div><h3 data-i18n="program.ceremony" class="font-serif text-xl text-[#746a65]">Ceremonie</h3><p data-i18n="program.ceremonyText" class="mt-1 text-[#b6aaa5]">Mariage civil</p></div>
+              </div>
+              <div class="grid grid-cols-[2.8rem_4.5rem_1fr] items-start gap-4">
+                <div class="grid h-10 w-10 place-items-center rounded-full bg-white text-xl text-[#d88950] shadow-sm">♕</div>
+                <time class="rounded-md bg-[#ef6677] px-2 py-1 text-center text-xs font-semibold text-white">10:00 PM</time>
+                <div><h3 data-i18n="program.cocktail" class="font-serif text-xl text-[#746a65]">Cocktail</h3><p data-i18n="program.cocktailText" class="mt-1 text-[#b6aaa5]">Aperitifs et boissons</p></div>
+              </div>
+              <div class="grid grid-cols-[2.8rem_4.5rem_1fr] items-start gap-4">
+                <div class="grid h-10 w-10 place-items-center rounded-full bg-white text-xl text-[#d88950] shadow-sm">⌘</div>
+                <time class="rounded-md bg-[#ef6677] px-2 py-1 text-center text-xs font-semibold text-white">11:00 PM</time>
+                <div><h3 data-i18n="program.dinner" class="font-serif text-xl text-[#746a65]">Diner</h3><p data-i18n="program.dinnerText" class="mt-1 text-[#b6aaa5]">Repas de mariage</p></div>
+              </div>
+              <div class="grid grid-cols-[2.8rem_4.5rem_1fr] items-start gap-4">
+                <div class="grid h-10 w-10 place-items-center rounded-full bg-white text-xl text-[#d88950] shadow-sm">♡</div>
+                <time class="rounded-md bg-[#ef6677] px-2 py-1 text-center text-xs font-semibold text-white">12:30 PM</time>
+                <div><h3 data-i18n="program.firstDance" class="font-serif text-xl text-[#746a65]">Premiere danse</h3><p data-i18n="program.firstDanceText" class="mt-1 text-[#b6aaa5]">La danse des maries</p></div>
+              </div>
+              <div class="grid grid-cols-[2.8rem_4.5rem_1fr] items-start gap-4">
+                <div class="grid h-10 w-10 place-items-center rounded-full bg-white text-xl text-[#d88950] shadow-sm">♫</div>
+                <time class="rounded-md bg-[#ef6677] px-2 py-1 text-center text-xs font-semibold text-white">2:00 AM</time>
+                <div><h3 data-i18n="program.party" class="font-serif text-xl text-[#746a65]">Fete</h3><p data-i18n="program.partyText" class="mt-1 text-[#b6aaa5]">Dansons ensemble !</p></div>
+              </div>
+              <div class="grid grid-cols-[2.8rem_4.5rem_1fr] items-start gap-4">
+                <div class="grid h-10 w-10 place-items-center rounded-full bg-white text-xl text-[#d88950] shadow-sm">✣</div>
+                <time class="rounded-md bg-[#ef6677] px-2 py-1 text-center text-xs font-semibold text-white">5:00 AM</time>
+                <div><h3 data-i18n="program.end" class="font-serif text-xl text-[#746a65]">Fin</h3><p data-i18n="program.endText" class="mt-1 text-[#b6aaa5]">Au revoir</p></div>
+              </div>
+            </div>
+
+            <div class="relative mx-auto mt-16 hidden w-full max-w-[1020px] lg:block">
+              <div class="absolute left-0 right-0 top-[94px] z-0 h-px bg-[#718063]"></div>
+              <div class="relative z-10 grid grid-cols-7 gap-5 text-center">
+                <div>
+                  <time class="inline-flex rounded-full bg-[#e8c49f] px-4 py-2 text-base font-semibold text-[#34492b]">8:00 PM</time>
+                  <div class="mx-auto mt-6 grid h-16 w-16 place-items-center rounded-full border-[3px] border-[#7d8d73] bg-[#34492b] text-2xl text-[#e8c49f]">♙</div>
+                  <h3 data-i18n="program.arrival" class="mt-7 font-serif text-lg text-white">Arrivee des invites</h3>
+                  <p data-i18n="program.arrivalText" class="mt-3 text-sm leading-5 text-[#c6cebf]">Accueil et reception</p>
+                </div>
+                <div>
+                  <time class="inline-flex rounded-full bg-[#e8c49f] px-4 py-2 text-base font-semibold text-[#34492b]">9:00 PM</time>
+                  <div class="mx-auto mt-6 grid h-16 w-16 place-items-center rounded-full border-[3px] border-[#7d8d73] bg-[#34492b] text-2xl text-[#e8c49f]">♡</div>
+                  <h3 data-i18n="program.ceremony" class="mt-7 font-serif text-lg text-white">Ceremonie</h3>
+                  <p data-i18n="program.ceremonyText" class="mt-3 text-sm leading-5 text-[#c6cebf]">Mariage civil</p>
+                </div>
+                <div>
+                  <time class="inline-flex rounded-full bg-[#e8c49f] px-4 py-2 text-base font-semibold text-[#34492b]">10:00 PM</time>
+                  <div class="mx-auto mt-6 grid h-16 w-16 place-items-center rounded-full border-[3px] border-[#7d8d73] bg-[#34492b] text-2xl text-[#e8c49f]">♕</div>
+                  <h3 data-i18n="program.cocktail" class="mt-7 font-serif text-lg text-white">Cocktail</h3>
+                  <p data-i18n="program.cocktailText" class="mt-3 text-sm leading-5 text-[#c6cebf]">Aperitifs et boissons</p>
+                </div>
+                <div>
+                  <time class="inline-flex rounded-full bg-[#e8c49f] px-4 py-2 text-base font-semibold text-[#34492b]">11:00 PM</time>
+                  <div class="mx-auto mt-6 grid h-16 w-16 place-items-center rounded-full border-[3px] border-[#7d8d73] bg-[#34492b] text-2xl text-[#e8c49f]">⌘</div>
+                  <h3 data-i18n="program.dinner" class="mt-7 font-serif text-lg text-white">Diner</h3>
+                  <p data-i18n="program.dinnerText" class="mt-3 text-sm leading-5 text-[#c6cebf]">Repas de mariage</p>
+                </div>
+                <div>
+                  <time class="inline-flex rounded-full bg-[#e8c49f] px-4 py-2 text-base font-semibold text-[#34492b]">11:30 PM</time>
+                  <div class="mx-auto mt-6 grid h-16 w-16 place-items-center rounded-full border-[3px] border-[#7d8d73] bg-[#34492b] text-2xl text-[#e8c49f]">♡</div>
+                  <h3 data-i18n="program.firstDance" class="mt-7 font-serif text-lg text-white">Premiere danse</h3>
+                  <p data-i18n="program.firstDanceText" class="mt-3 text-sm leading-5 text-[#c6cebf]">La danse des maries</p>
+                </div>
+                <div>
+                  <time class="inline-flex rounded-full bg-[#e8c49f] px-4 py-2 text-base font-semibold text-[#34492b]">2:00 AM</time>
+                  <div class="mx-auto mt-6 grid h-16 w-16 place-items-center rounded-full border-[3px] border-[#7d8d73] bg-[#34492b] text-2xl text-[#e8c49f]">♫</div>
+                  <h3 data-i18n="program.party" class="mt-7 font-serif text-lg text-white">Fete</h3>
+                  <p data-i18n="program.partyText" class="mt-3 text-sm leading-5 text-[#c6cebf]">Dansons ensemble !</p>
+                </div>
+                <div>
+                  <time class="inline-flex rounded-full bg-[#e8c49f] px-4 py-2 text-base font-semibold text-[#34492b]">5:00 AM</time>
+                  <div class="mx-auto mt-6 grid h-16 w-16 place-items-center rounded-full border-[3px] border-[#7d8d73] bg-[#34492b] text-2xl text-[#e8c49f]">✣</div>
+                  <h3 data-i18n="program.end" class="mt-7 font-serif text-lg text-white">Fin</h3>
+                  <p data-i18n="program.endText" class="mt-3 text-sm leading-5 text-[#c6cebf]">Au revoir</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="bg-[#f5f0e6] px-8 py-20 text-center lg:px-20 lg:py-24">
+            <h2 data-i18n="gifts.title" class="font-['Great_Vibes',cursive] text-[4rem] leading-none text-[#385032] lg:text-[4.2rem]">Cadeaux</h2>
+            <p data-i18n="gifts.text" class="mx-auto mt-8 max-w-sm text-lg leading-8 text-[#746b64] lg:max-w-xl lg:text-xl lg:leading-[1.5]">
+              Votre presence est le plus beau des cadeaux. Si vous souhaitez nous honorer avec une contribution, vous pouvez le faire de la maniere qui vous convient le mieux.
+            </p>
+            <button class="mt-12 w-full rounded-xl bg-[#34492b] px-8 py-5 text-left font-serif text-lg text-white shadow-[0_16px_36px_rgba(52,73,43,0.18)] transition hover:bg-[#2c3e25] lg:max-w-xl lg:text-lg">
+              <span data-i18n="gifts.button">Contribution</span>
+            </button>
+          </section>
+
+          <section class="bg-[#f5f0e6] px-8 py-20 text-center lg:px-20 lg:py-24">
+            <p data-i18n="event.kicker" class="text-xs uppercase tracking-[0.55em] text-[#d28b50] lg:text-base">Rejoignez-nous</p>
+            <h2 data-i18n="event.title" class="mt-4 font-serif text-4xl leading-tight text-[#385032] lg:text-[3.75rem]">Details de l'evenement</h2>
+            <p data-i18n="event.text" class="mx-auto mt-6 max-w-sm text-base leading-7 text-[#746b64] lg:max-w-xl lg:text-lg lg:leading-[1.5]">
+              Nous avons hate de celebrer cette journee speciale avec vous. Voici tout ce que vous devez savoir.
+            </p>
+
+            <div class="mx-auto mt-10 max-w-[780px] overflow-hidden rounded-2xl border border-[#ead8c8] bg-[#fffdf8] text-left shadow-[0_18px_45px_rgba(126,90,82,0.12)] lg:grid lg:grid-cols-[0.82fr_1.18fr]">
+              <div class="p-6 text-center lg:flex lg:flex-col lg:justify-center lg:p-12">
+                <p data-i18n="event.time" class="text-sm text-[#d28b50] lg:text-lg">Ceremonie - 20h00</p>
+                <h3 data-i18n="event.date" class="mt-2 font-serif text-2xl text-[#385032] lg:text-3xl">La date du mariage est le 30 juillet</h3>
+                <p class="mt-2 text-sm leading-6 text-[#746b64] lg:text-lg lg:leading-8">Dar Laaziza : Salle des Événements & Réceptions</p>
+                <div class="mt-8 hidden space-y-3 lg:block">
+                 
+                </div>
+              </div>
+              <div class="relative h-64 overflow-hidden bg-[#edf0e6] lg:h-[340px]">
+                <div class="absolute inset-0 bg-[linear-gradient(35deg,transparent_48%,rgba(165,174,158,0.45)_49%,rgba(165,174,158,0.45)_51%,transparent_52%),linear-gradient(115deg,transparent_46%,rgba(190,190,184,0.55)_47%,rgba(190,190,184,0.55)_50%,transparent_51%)]"></div>
+                <div class="absolute -bottom-10 right-0 h-44 w-56 rounded-tl-full bg-[#cfe8d2] lg:h-72 lg:w-96"></div>
+                <div data-i18n="map.view" class="absolute left-10 top-14 h-8 w-32 rounded bg-white/80 text-center text-xs leading-8 text-[#8fa0a8] shadow-sm">Voir la carte</div>
+                <div class="absolute left-[54%] top-[35%] -translate-x-1/2 -translate-y-1/2 text-center">
+                  <div class="mx-auto h-9 w-9 rounded-full bg-[#ef3e2f] shadow-[0_8px_20px_rgba(239,62,47,0.28)]"></div>
+                  <div class="mx-auto -mt-1 h-5 w-5 rotate-45 bg-[#ef3e2f]"></div>
+                  <p data-i18n="map.pin" class="mt-2 w-36 text-sm font-semibold leading-4 text-[#c96a70]">Dar Laaziza</p>
+                </div>
+                <p class="absolute bottom-3 left-4 text-xs text-[#9aa4a5]">Rue Manin</p>
+                <p class="absolute bottom-8 right-5 text-xs text-[#9aa4a5]">Parc des Buttes-Chaumont</p>
+                <p class="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] text-[#9aa4a5]">Google · Map data ©2026</p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.2125603133836!2d-7.6342069!3d33.4698163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62fba8660c7fd%3A0xb29b59ed7d4d1fed!2sDar%20Laaziza%20%3A%20Salle%20des%20%C3%89v%C3%A9nements%20%26%20R%C3%A9ceptions!5e0!3m2!1sfr!2sma!4v1782044182459!5m2!1sfr!2sma"
+                  title="Dar Laaziza map"
+                  class="absolute inset-0 z-10 h-full w-full border-0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="mt-5 space-y-3 lg:hidden">
+              <button class="w-full rounded-lg border border-[#ead8c8] bg-white/70 px-5 py-4 text-sm font-medium text-[#d28b50]">⌁ <span data-i18n="event.openMaps">Ouvrir dans Maps</span></button>
+              <button class="w-full rounded-lg border border-[#ead8c8] bg-white/70 px-5 py-4 text-sm font-medium text-[#d28b50]">□ <span data-i18n="event.addCalendar">Ajouter au calendrier</span></button>
+            </div>
+          </section>
+
+          <section id="rsvp" class="bg-[#f5f0e6] px-8 py-20 text-center lg:min-h-screen lg:px-12 lg:py-16">
+            <p data-i18n="contact.kicker" class="text-xs uppercase tracking-[0.55em] text-[#d28b50] lg:text-lg">Soyez nos invites</p>
+            <h2 data-i18n="contact.title" class="mt-5 font-serif text-5xl tracking-[0.12em] text-[#385032] lg:text-6xl">Contact</h2>
+            <div class="mx-auto my-8 flex max-w-[230px] items-center justify-center gap-5 text-[#d28b50] lg:my-10 lg:max-w-[360px] lg:gap-8">
+              <span class="h-px flex-1 bg-[#e7c9ac]"></span>
+              <span class="text-2xl lg:text-4xl">♡</span>
+              <span class="h-px flex-1 bg-[#e7c9ac]"></span>
+            </div>
+            <p data-i18n="contact.text" class="mx-auto max-w-sm text-lg leading-8 text-[#746b64] lg:max-w-3xl lg:text-2xl lg:leading-[1.4]">Envoyez-nous votre message, nous serons heureux de vous lire.</p>
+
+            <form class="rsvp-form mt-12 space-y-8 text-left lg:mx-auto lg:mt-14 lg:max-w-[760px] lg:space-y-8 lg:rounded-[1.5rem] lg:bg-white lg:p-16 lg:shadow-[0_18px_45px_rgba(91,70,52,0.12)]">
+              <label class="block">
+                <span data-i18n="form.fullName" class="text-sm font-semibold text-[#2d2a27] lg:text-lg">Nom complet *</span>
+                <input required name="fullName" type="text" data-i18n-placeholder="form.fullNamePlaceholder" placeholder="Votre nom complet" class="mt-3 w-full rounded-xl border border-transparent bg-white/70 px-5 py-4 text-[#6a625f] outline-none ring-1 ring-[#e3ebe2] transition placeholder:text-[#8c7d75] focus:ring-[#d28b50] lg:mt-4 lg:h-14 lg:bg-white lg:px-5 lg:text-lg" />
+              </label>
+              <label class="block">
+                <span data-i18n="form.email" class="text-sm font-semibold text-[#2d2a27] lg:text-lg">Adresse email *</span>
+                <input required name="email" type="email" data-i18n-placeholder="form.emailPlaceholder" placeholder="votre@email.com" class="mt-3 w-full rounded-xl border border-transparent bg-white/70 px-5 py-4 text-[#6a625f] outline-none ring-1 ring-[#e3ebe2] transition placeholder:text-[#8c7d75] focus:ring-[#d28b50] lg:mt-4 lg:h-14 lg:bg-white lg:px-5 lg:text-lg" />
+              </label>
+              <label class="block">
+                <span data-i18n="form.phone" class="text-sm font-semibold text-[#2d2a27] lg:text-lg">Numero de telephone *</span>
+                <input required name="phone" type="tel" data-i18n-placeholder="form.phonePlaceholder" placeholder="Votre numero de telephone" class="mt-3 w-full rounded-xl border border-transparent bg-white/70 px-5 py-4 text-[#6a625f] outline-none ring-1 ring-[#e3ebe2] transition placeholder:text-[#8c7d75] focus:ring-[#d28b50] lg:mt-4 lg:h-14 lg:bg-white lg:px-5 lg:text-lg" />
+              </label>
+              <label class="block">
+                <span data-i18n="form.subject" class="text-sm font-semibold text-[#2d2a27] lg:text-lg">Sujet *</span>
+                <input required name="subject" type="text" data-i18n-placeholder="form.subjectPlaceholder" placeholder="Sujet du message" class="mt-3 w-full rounded-xl border border-transparent bg-white/70 px-5 py-4 text-[#6a625f] outline-none ring-1 ring-[#e3ebe2] transition placeholder:text-[#8c7d75] focus:ring-[#d28b50] lg:mt-4 lg:h-14 lg:bg-white lg:px-5 lg:text-lg" />
+              </label>
+              <label class="block">
+                <span data-i18n="form.message" class="text-sm font-semibold text-[#2d2a27] lg:text-lg">Message *</span>
+                <textarea required name="message" rows="4" data-i18n-placeholder="form.messagePlaceholder" placeholder="Ecrivez votre message..." class="mt-3 w-full resize-none rounded-xl border border-transparent bg-white/70 px-5 py-4 text-[#6a625f] outline-none ring-1 ring-[#e3ebe2] transition placeholder:text-[#8c7d75] focus:ring-[#d28b50] lg:mt-4 lg:min-h-36 lg:bg-white lg:px-5 lg:py-5 lg:text-lg"></textarea>
+              </label>
+              <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+              <button type="submit" data-i18n="form.submit" class="w-full rounded-xl bg-[#34492b] px-6 py-4 text-sm font-semibold text-white shadow-[0_16px_36px_rgba(52,73,43,0.2)] transition hover:bg-[#2c3e25] disabled:cursor-not-allowed disabled:opacity-70 lg:py-5 lg:text-2xl">
+                Envoyer le message
+              </button>
+              <p class="rsvp-message hidden text-center text-sm text-[#d28b50] lg:text-xl" role="status" aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="bg-[#f5f0e6] px-8 py-20 lg:px-20 lg:py-20">
+           
+            <div class="mx-auto mt-16 max-w-[980px] rounded-[1.75rem] bg-[#34492b] px-8 py-12 text-white lg:mt-20 lg:px-14 lg:py-12">
+              <h3 data-i18n="footer.title" class="text-center font-serif text-3xl lg:text-4xl">Merci</h3>
+              <p data-i18n="footer.text" class="mx-auto mt-8 max-w-4xl text-center text-lg text-[#d7dcd0] lg:text-2xl">Un grand merci a toutes les personnes qui seront presentes a notre ceremonie et qui partageront cette journee speciale avec nous. Votre presence, votre amour et votre soutien comptent enormement. Si vous ne pouvez pas venir, ce n'est pas grave, nous apprecions vos voeux et esperons celebrer avec vous une autre fois. Merci a tous de faire partie de notre histoire !</p>
+            
+          </section>
+        </article>
+
+        <button id="language-toggle" class="absolute left-4 top-4 z-[80] flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs font-medium text-[#8f827c] shadow-[0_10px_30px_rgba(90,64,56,0.12)] backdrop-blur-md lg:left-8 lg:top-8 lg:px-5 lg:py-3 lg:text-sm" type="button" aria-label="Changer de langue">
+          <span>◎</span>
+          <span data-language-label>EN</span>
+        </button>
+        <button id="sound-toggle" class="absolute bottom-6 right-5 z-[80] grid h-12 w-12 place-items-center rounded-full bg-white/70 text-[#9a8d86] shadow-[0_10px_30px_rgba(90,64,56,0.12)] backdrop-blur-md transition hover:bg-white lg:h-14 lg:w-14" type="button" aria-label="Son active">
+          ♫
+        </button>
+      </section>
+    </main>
+
+    <iframe
+      id="wedding-music"
+      class="hidden"
+      src="https://www.youtube.com/embed/0zmb1go5R6s?enablejsapi=1&loop=1&playlist=0zmb1go5R6s&playsinline=1"
+      title="Wedding music"
+      allow="autoplay"
+    ></iframe>
+
+    <script>
+      const invitation = document.getElementById("invitation");
+      const introVideo = document.getElementById("intro-video");
+      const heroBackgroundVideo = document.getElementById("hero-background-video");
+      const startInvitation = document.getElementById("start-invitation");
+      const content = document.querySelector(".invite-content");
+      const soundToggle = document.getElementById("sound-toggle");
+      const weddingMusic = document.getElementById("wedding-music");
+      const languageToggle = document.getElementById("language-toggle");
+      const languageLabel = document.querySelector("[data-language-label]");
+      const rsvpForm = document.querySelector(".rsvp-form");
+      const rsvpMessage = document.querySelector(".rsvp-message");
+      let heroRevealTimer;
+      let hasStarted = false;
+      let currentLanguage = ["fr", "en"].includes(localStorage.getItem("siteLanguage")) ? localStorage.getItem("siteLanguage") : "fr";
+
+      const HERO_TEXT_DELAY = 900;
+      const controlWeddingMusic = (command) => {
+        weddingMusic.contentWindow?.postMessage(JSON.stringify({ event: "command", func: command, args: [] }), "*");
+      };
+
+      const playWeddingMusic = () => controlWeddingMusic("playVideo");
+      const pauseWeddingMusic = () => controlWeddingMusic("pauseVideo");
+
+      const translations = {
+        fr: {
+          title: "Invitation de Souhail & Wissal",
+          startIntro: "Lancer l'animation d'ouverture",
+          switchLanguage: "Passer en anglais",
+          soundOn: "Son active",
+          soundOff: "Son coupe",
+          sending: "Envoi...",
+          success: "Merci, votre message a bien ete envoye.",
+          error: "Desole, une erreur est survenue. Veuillez reessayer.",
+          "hero.kicker": "Nous nous marions",
+          "hero.date": "22 novembre 2026",
+          "hero.cta": "Confirmer votre presence",
+          "story.kicker": "Notre Parcours",
+          "story.title": "Notre Histoire d'Amour",
+          "story.metTitle": "Notre Rencontre",
+          "story.metText": "Nos chemins se sont croises de la plus belle des facons. Ce qui a commence par une rencontre inattendue est devenu le debut de notre magnifique aventure ensemble.",
+          "story.adventureTitle": "Notre Premiere Aventure",
+          "story.adventureText": "Nous savions que c'etait pour toujours. Construire notre vie ensemble, soutenir nos reves et grandir chaque jour un peu plus forts.",
+          "program.title": "Programme du Jour",
+          "program.subtitle": "Ce que nous avons prepare pour vous",
+          "program.arrival": "Arrivee des invites",
+          "program.arrivalText": "Accueil et reception",
+          "program.ceremony": "Ceremonie",
+          "program.ceremonyText": "Mariage civil",
+          "program.cocktail": "Cocktail",
+          "program.cocktailText": "Aperitifs et boissons",
+          "program.dinner": "Diner",
+          "program.dinnerText": "Repas de mariage",
+          "program.firstDance": "Premiere danse",
+          "program.firstDanceText": "La danse des maries",
+          "program.party": "Fete",
+          "program.partyText": "Dansons ensemble !",
+          "program.end": "Fin",
+          "program.endText": "Au revoir",
+          "gifts.title": "Cadeaux",
+          "gifts.text": "Votre presence est le plus beau des cadeaux. Si vous souhaitez nous honorer avec une contribution, vous pouvez le faire de la maniere qui vous convient le mieux.",
+          "gifts.button": "Contribution",
+          "event.kicker": "Rejoignez-nous",
+          "event.title": "Details de l'evenement",
+          "event.text": "Nous avons hate de celebrer cette journee speciale avec vous. Voici tout ce que vous devez savoir.",
+          "event.time": "Ceremonie - 20h00",
+          "event.date": "La date du mariage est le 30 juillet",
+          "event.openMaps": "Ouvrir dans Maps",
+          "event.addCalendar": "Ajouter au calendrier",
+          "map.view": "Voir la carte",
+          "map.pin": "Dar Laaziza",
+          "contact.kicker": "Soyez nos invites",
+          "contact.title": "Contact",
+          "contact.text": "Envoyez-nous votre message, nous serons heureux de vous lire.",
+          "form.fullName": "Nom complet *",
+          "form.fullNamePlaceholder": "Votre nom complet",
+          "form.email": "Adresse email *",
+          "form.emailPlaceholder": "votre@email.com",
+          "form.phone": "Numero de telephone *",
+          "form.phonePlaceholder": "Votre numero de telephone",
+          "form.subject": "Sujet *",
+          "form.subjectPlaceholder": "Sujet du message",
+          "form.message": "Message *",
+          "form.messagePlaceholder": "Ecrivez votre message...",
+          "form.submit": "Envoyer le message",
+          "footer.title": "Merci",
+          "footer.text": "Un grand merci a toutes les personnes qui seront presentes a notre ceremonie et qui partageront cette journee speciale avec nous. Votre presence, votre amour et votre soutien comptent enormement. Si vous ne pouvez pas venir, ce n'est pas grave, nous apprecions vos voeux et esperons celebrer avec vous une autre fois. Merci a tous de faire partie de notre histoire !",
+        },
+        en: {
+          title: "Souhail & Wissal Invitation",
+          startIntro: "Play opening animation",
+          switchLanguage: "Switch to French",
+          soundOn: "Sound on",
+          soundOff: "Sound off",
+          sending: "Sending...",
+          success: "Thank you, your message has been sent successfully.",
+          error: "Sorry, something went wrong. Please try again.",
+          "hero.kicker": "We are getting married",
+          "hero.date": "November 22, 2026",
+          "hero.cta": "Confirm attendance",
+          "story.kicker": "Our Journey",
+          "story.title": "Our Love Story",
+          "story.metTitle": "How We Met",
+          "story.metText": "Our paths crossed in the most unexpected way. What started as a chance encounter became the beginning of our beautiful journey together.",
+          "story.adventureTitle": "First Adventure",
+          "story.adventureText": "We knew this was forever. Building our life together, supporting each other's dreams, and growing stronger with each passing day.",
+          "program.title": "Day Program",
+          "program.subtitle": "What we have prepared for you",
+          "program.arrival": "Guest Arrival",
+          "program.arrivalText": "Welcome and reception",
+          "program.ceremony": "Ceremony",
+          "program.ceremonyText": "Civil wedding",
+          "program.cocktail": "Cocktail",
+          "program.cocktailText": "Aperitifs and drinks",
+          "program.dinner": "Dinner",
+          "program.dinnerText": "Wedding banquet",
+          "program.firstDance": "First Dance",
+          "program.firstDanceText": "The newlyweds' dance",
+          "program.party": "Party",
+          "program.partyText": "Let's dance!",
+          "program.end": "End",
+          "program.endText": "Goodbye",
+          "gifts.title": "Gifts",
+          "gifts.text": "Your presence is the greatest gift. If you would like to honor us with a contribution, you may do so in the way that feels most comfortable.",
+          "gifts.button": "Contribution",
+          "event.kicker": "Join us",
+          "event.title": "Event Details",
+          "event.text": "We cannot wait to celebrate this special day with you. Here is everything you need to know.",
+          "event.time": "Ceremony - 8:00 PM",
+          "event.date": "The wedding date is July 30th",
+          "event.openMaps": "Open in Maps",
+          "event.addCalendar": "Add to Calendar",
+          "map.view": "View larger map",
+          "map.pin": "Dar Laaziza",
+          "contact.kicker": "Be our guest",
+          "contact.title": "Contact",
+          "contact.text": "Send us your message, we will be happy to read it.",
+          "form.fullName": "Full Name *",
+          "form.fullNamePlaceholder": "Your full name",
+          "form.email": "Email Address *",
+          "form.emailPlaceholder": "your@email.com",
+          "form.phone": "Phone Number *",
+          "form.phonePlaceholder": "Your phone number",
+          "form.subject": "Subject *",
+          "form.subjectPlaceholder": "Message subject",
+          "form.message": "Message *",
+          "form.messagePlaceholder": "Write your message...",
+          "form.submit": "Send Message",
+          "footer.title": "Thank You",
+          "footer.text": "Big thank you to everyone who joined us at our ceremony and shared this special day with us. Your presence, love, and support meant so much. If you couldn't make it, that's completely fine; we appreciate your good wishes and hope to celebrate with you another time. Thank you all for being part of our journey!",
+        },
+      };
+
+      const applyLanguage = (language) => {
+        const dictionary = translations[language] || translations.fr;
+        currentLanguage = language;
+        document.documentElement.lang = language;
+        document.title = dictionary.title;
+        startInvitation.setAttribute("aria-label", dictionary.startIntro);
+        languageToggle.setAttribute("aria-label", dictionary.switchLanguage);
+        soundToggle.setAttribute("aria-label", soundToggle.classList.contains("opacity-60") ? dictionary.soundOff : dictionary.soundOn);
+        languageLabel.textContent = language === "fr" ? "EN" : "FR";
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          element.textContent = dictionary[element.dataset.i18n];
+        });
+        document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+          element.setAttribute("placeholder", dictionary[element.dataset.i18nPlaceholder]);
+        });
+
+        const eventTime = document.querySelector(".p-6.text-center p");
+        const footerText = document.querySelector(".max-w-\\[980px\\].rounded-\\[1\\.75rem\\] p");
+        const mobileMapButtons = [];
+        if (eventTime) eventTime.textContent = dictionary["event.time"];
+        if (footerText) footerText.textContent = dictionary["footer.text"];
+        if (mobileMapButtons[0]) mobileMapButtons[0].innerHTML = `âŒ ${dictionary["event.openMaps"]}`;
+        if (mobileMapButtons[1]) mobileMapButtons[1].innerHTML = `â–¡ ${dictionary["event.addCalendar"]}`;
+      };
+
+      applyLanguage(currentLanguage);
+
+      languageToggle.addEventListener("click", () => {
+        const nextLanguage = currentLanguage === "fr" ? "en" : "fr";
+        localStorage.setItem("siteLanguage", nextLanguage);
+        applyLanguage(nextLanguage);
+      });
+
+      const revealHeroCopy = () => {
+        clearTimeout(heroRevealTimer);
+        heroRevealTimer = setTimeout(() => {
+          invitation.classList.add("is-hero-ready");
+        }, HERO_TEXT_DELAY);
+      };
+
+      const finishIntro = () => {
+        if (invitation.classList.contains("is-intro-done")) return;
+
+        invitation.classList.add("is-intro-done");
+        content.classList.remove("overflow-hidden");
+        content.classList.add("overflow-y-auto");
+        heroBackgroundVideo.currentTime = 0;
+        heroBackgroundVideo.play().catch(() => {});
+        revealHeroCopy();
+      };
+
+      const startIntro = () => {
+        if (hasStarted) return;
+
+        hasStarted = true;
+        invitation.classList.add("has-started");
+        startInvitation.disabled = true;
+        playWeddingMusic();
+        introVideo.currentTime = 0;
+        introVideo.play().catch(finishIntro);
+      };
+
+      startInvitation.addEventListener("pointerdown", startIntro);
+      startInvitation.addEventListener("click", startIntro);
+      introVideo.addEventListener("ended", finishIntro);
+      introVideo.addEventListener("error", finishIntro);
+
+      document.querySelectorAll("[data-scroll-to]").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.getElementById(button.dataset.scrollTo).scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      soundToggle.addEventListener("click", () => {
+        const isMuted = soundToggle.classList.toggle("opacity-60");
+        if (isMuted) {
+          pauseWeddingMusic();
+        } else {
+          playWeddingMusic();
+        }
+        soundToggle.textContent = isMuted ? "♪" : "♫";
+        soundToggle.setAttribute("aria-label", isMuted ? translations[currentLanguage].soundOff : translations[currentLanguage].soundOn);
+      });
+
+      const CONTACT_RECEIVER_EMAIL = "ikramnassih1017@gmail.com";
+      const CONTACT_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_RECEIVER_EMAIL}`;
+
+      rsvpForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!rsvpForm.checkValidity()) {
+          rsvpForm.reportValidity();
+          return;
+        }
+
+        const formData = new FormData(rsvpForm);
+        const submitButton = rsvpForm.querySelector('button[type="submit"]');
+        const payload = {
+          name: formData.get("fullName"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          subject: formData.get("subject"),
+          message: formData.get("message"),
+          _subject: `Website contact: ${formData.get("subject")}`,
+          _template: "table",
+          _honey: formData.get("_honey"),
+        };
+
+        rsvpMessage.classList.add("hidden");
+        submitButton.disabled = true;
+        submitButton.textContent = translations[currentLanguage].sending;
+
+        try {
+          const response = await fetch(CONTACT_ENDPOINT, {
+            method: "POST",
+            headers: {
+              "Accept": "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+
+          if (!response.ok) {
+            throw new Error("The message could not be sent.");
+          }
+
+          rsvpForm.reset();
+          rsvpMessage.textContent = translations[currentLanguage].success;
+          rsvpMessage.classList.remove("hidden", "text-[#c96a70]");
+          rsvpMessage.classList.add("text-[#d28b50]");
+        } catch (error) {
+          rsvpMessage.textContent = translations[currentLanguage].error;
+          rsvpMessage.classList.remove("hidden", "text-[#d28b50]");
+          rsvpMessage.classList.add("text-[#c96a70]");
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = translations[currentLanguage]["form.submit"];
+        }
+      });
+    </script>
+  </body>
+</html>
