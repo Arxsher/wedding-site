@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitation de Souhail & Wissal</title>
-    <link rel="icon" type="image/png" href="/image.png" />
+    <link rel="icon" type="image/png" href="./public/image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap" rel="stylesheet" />
@@ -489,11 +489,8 @@
 
         const eventTime = document.querySelector(".p-6.text-center p");
         const footerText = document.querySelector(".max-w-\\[980px\\].rounded-\\[1\\.75rem\\] p");
-        const mobileMapButtons = [];
         if (eventTime) eventTime.textContent = dictionary["event.time"];
         if (footerText) footerText.textContent = dictionary["footer.text"];
-        if (mobileMapButtons[0]) mobileMapButtons[0].innerHTML = `âŒ ${dictionary["event.openMaps"]}`;
-        if (mobileMapButtons[1]) mobileMapButtons[1].innerHTML = `â–¡ ${dictionary["event.addCalendar"]}`;
       };
 
       applyLanguage(currentLanguage);
